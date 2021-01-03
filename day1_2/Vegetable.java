@@ -4,12 +4,14 @@ public class Vegetable{
   private String color;
   private double price;
   private double weight;
+  private int quantity;
 
   //constructor
   public Vegetable(String c, double p, double w){
     this.color = c;
     this.price = p;
     this.weight = w; //in ounces!
+    this.quantity = 0;
   }
 
   //accessor methods
@@ -24,6 +26,14 @@ public class Vegetable{
 
   public double getWeight(){
     return weight;
+  }
+
+  public double getQuantity(){
+    return quantity;
+  }
+
+  public void setQuantity(int quant){
+    this.quantity = quant;
   }
 
 
@@ -42,7 +52,7 @@ public class Vegetable{
         totalCost += list[i].getWeight();
       }
     }
-    System.out.println("The total cost of green vegetables are $" + totalCost);
+    //System.out.println("The total cost of green vegetables are $" + totalCost);
 
   }
 }

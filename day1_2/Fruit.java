@@ -8,11 +8,11 @@ public class Fruit{
   private int quantity;
 
   //constructor
-  public Fruit(String c, double p, double w, int q){
+  public Fruit(String c, double p, double w){
     this.color = c;
     this.price = p;
     this.weight = w; //in ounces!
-    this.quantity = q;
+    this.quantity = 0;
   }
 
   //accessor methods
@@ -33,7 +33,7 @@ public class Fruit{
     return quantity;
   }
 
-  public double setQuantity(int quant){
+  public void setQuantity(int quant){
     this.quantity = quant;
   }
 
