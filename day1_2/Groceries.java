@@ -1,7 +1,10 @@
-//pracitce oop
+//pracitce oop and arraylists
+
 //have user decide if they like the item and how much do they want
 //print the number of fruits and vegetables
 //print the total cost and weight
+
+//ERRORS: hashcode printing instead of item name, loop ending after one yes, anticipating users to input something other than asked for (eg.  enters letter instead of number)
 
 import java.lang.*;
 import java.util.*; //is this needed for equalsIgnoreCase?
@@ -93,19 +96,20 @@ public class Groceries {
         }
         if (answer.equalsIgnoreCase("N")){ //makes answer not case sensitive
           continue;
-        }
+        //}
         //test case error
-        else{
-          StdOut.println("Only respond Y or N!");
-          break;
-        }
+        //else{
+          //StdOut.println("Only respond Y or N!");
+          //break;
+        //}
 
         }
 
         //StdOut.println("Your total cost is " + totalCost +  ".\nYour total weight is " + totalWeight + ". " + "\nThere are " + numberOfFruits " fruits and " + " vegetables. " + "\n There are " + numberOfGreen + "green items and " + numberOfOrange + "orange items." );
         StdOut.println("You are buying the following items: " + UserList);
-        StdOut.println("Your total cost is " + totalCost);
+        StdOut.println("Your total cost is $" + totalCost);
 
     }
 
   }
+}
