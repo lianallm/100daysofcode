@@ -36,7 +36,7 @@ public class Groceries {
       }
       //System.out.println("The total cost of green vegetables are $" + totalCost);
 
-      //create list of all items to make a loop for asking user
+      //create list of all items to make a loop for asking user... is there a better way to do this? :(
       ArrayList<Object> GroceryList = new ArrayList<>();
       GroceryList.add( (Object) apple );
       GroceryList.add( (Object) pear );
