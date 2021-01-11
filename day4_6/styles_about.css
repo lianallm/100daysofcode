@@ -1,0 +1,23 @@
+body{
+  margin:0;
+  padding: 0;
+  background: #262626;
+}
+
+.img-test{
+  width: 1112px;
+  height:584px;
+  background-image: url(images/luffy.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  transition: all 2s ease-in-out;
+  /* support for other browsers */
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+}
+
+.img-test:hover{
+  background-image: url(images/sanji.png);
+}
