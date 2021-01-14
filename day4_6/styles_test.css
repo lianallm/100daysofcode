@@ -1,0 +1,98 @@
+/* MASTER STYLES */
+body{
+  margin: 0px;
+  padding: 0;
+  background: #54123b;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr; /*100 percent; fractional unit go from end to end*/
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px
+}
+
+.left-side{
+  display: flex;
+}
+
+/* NAVIGATION STYLES */
+.nav-wrapper > .left-side > div { /*gets divs under nav wrapper */
+  margin-right: 20px;
+  font-size: 0.9em;
+  text-transform: uppercase; /* converts uppercase, lowercase*/
+}
+
+.nav-link-wrapper{ /* animation 1*/
+  height: 22 px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a{ /* animation 2: color; inside nav link wrapper, grab a link */
+  color: #29c7ac; /* teal*/
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover{ /*pseudo states, allows hover to animate*/
+  border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover{ /*pseudo states, allows hover to animate*/
+  color: black;
+}
+
+/*PORTFOLIO STYLES */
+.portfolio-items-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 columns and full sized */
+}
+
+.portfolio-item-wrapper{
+  position: relative; /*flexibility with items inside */
+}
+
+.portfolio-img-bg{
+  height: 350px;
+  width: 100%;
+  background-position: center;
+  background-size: cover; /* cropping different size pics to sit nicely with each other*/.
+  background-repeat: no-repeat;
+}
+
+/*.portfolio-item-wrapper .portfolio-img-bg:hover{
+  background-image: url('/images/luffy.PNG');
+} <---- not working!!!*/
+
+
+.img-text-wrapper{
+  position: absolute;/*forcing element to go somewhere it doesnt normally go, needs inapparent element that is relative*/
+  top: 0; /* position at top*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.logo-wrapper img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+
+.img-text-wrapper:hover .subtitile{
+  font-weight: 600;
+  color: lightseagreen;
+}
+
+.img-darken{
+  transition: 1s;
+  filter: brightness(10%);
+}

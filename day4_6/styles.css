@@ -1,3 +1,11 @@
+body{
+  margin:0;
+  padding: 0;
+  /* background: #252525; */
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight:800;
+}
+
 /* MASTER STYLES */
 body{
   margin: 0px;
@@ -11,7 +19,7 @@ body{
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 38px
+  padding: 30px
 }
 
 .left-side{
@@ -20,8 +28,8 @@ body{
 
 /* NAVIGATION STYLES */
 .nav-wrapper > .left-side > div { /*gets divs under nav wrapper */
-  margin-right: 20px;
-  font-size: 0.9em;
+  margin-right: 40px;
+  font-size: 1.25em;
   text-transform: uppercase; /* converts uppercase, lowercase*/
 }
 
@@ -32,65 +40,35 @@ body{
 }
 
 .nav-link-wrapper a{ /* animation 2: color; inside nav link wrapper, grab a link */
-  color: #8a8a8a; /* light grey*/
+  color: #c70039; /*  teal*/
   text-decoration: none;
   transition: color 0.5s;
 }
 
-.nav-link-wrapper:hover{ /*pseudo states, allows hover to animate*/
-  border-bottom: 1px solid black;
-}
-
 .nav-link-wrapper a:hover{ /*pseudo states, allows hover to animate*/
-  color: black;
+  color: #c0e218;
 }
 
-/*PORTFOLIO STYLES */
-.portfolio-items-wrapper{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* 3 columns and full sized */
+.name{
+  color: #c70039;
+  font-size: 1.25em;
 }
 
-.portfolio-item-wrapper{
-  position: relative; /*flexibility with items inside */
+.definition{
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0,0,0, .8);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    font-family: verdana;
+    font-weight: 700;
+    color: #f5f5f5;
 }
 
-.portfolio-img-bg{
-  height: 350px;
-  width: 100%;
-  background-position: center;
-  background-size: cover; /* cropping different size pics to sit nicely with each other*/.
-  background-repeat: no-repeat;
+.definition h1{
+  color: #c0e218;
 }
-
-/*.portfolio-item-wrapper .portfolio-img-bg:hover{
-  background-image: url('/images/luffy.PNG');
-} <---- not working!!!*/
-
-
-.img-text-wrapper{
-  position: absolute;/*forcing element to go somewhere it doesnt normally go, needs inapparent element that is relative*/
-  top: 0; /* position at top*/
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
-.logo-wrapper img {
-  width: 50%;
-  margin-bottom: 20px;
-}
-
-
-.img-text-wrapper:hover .subtitile{
-  font-weight: 600;
-  color: lightseagreen;
-}
-
-.img-darken{
-  transition: 1s;
-  filter: brightness(10%);
+.definition span{
+  color: #c0e218;
 }
