@@ -1,0 +1,25 @@
+{
+  "manifest_version":2,
+  "name": "Anime Pomodoro Timer",
+  "version": "1.0",
+  "description": "pomodoro technique but anime version",
+  "icons":{
+    "128": "icon128.png",
+    "48": "icon48.png",
+    "16": "icon16.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icon16.png",
+    "default_popup":"popup.html"
+  },
+
+  "options_page" : "options.html",
+
+  
+  "permissions": [
+    "storage",
+    "notifications",
+    "contextMenus"
+  ]
+}

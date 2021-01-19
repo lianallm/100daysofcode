@@ -1,0 +1,137 @@
+body{
+  margin:0;
+  padding: 0;
+  /* background: #252525; */
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  /* border-bottom: 0; */
+}
+
+/* MASTER STYLES */
+body{
+  margin: 0px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr; /*100 percent; fractional unit go from end to end*/
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  font-size: 14px;
+}
+
+.left-side{
+  display: flex;
+}
+
+/* NAVIGATION STYLES */
+.nav-wrapper > .left-side > div { /*gets divs under nav wrapper */
+  margin-right: 40px;
+  font-size: 1.25em;
+  text-transform: uppercase; /* converts uppercase, lowercase*/
+}
+
+.nav-link-wrapper{ /* animation 1*/
+  height: 22 px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a{ /* animation 2: color; inside nav link wrapper, grab a link */
+  color: #c70039; /*  teal*/
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+
+.nav-link-wrapper a:hover{ /*pseudo states, allows hover to animate*/
+  color: #c0e218;
+}
+
+.name{
+  color: #c70039;
+  font-size: 1.25em;
+}
+
+.flexbox-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  align-content: center;
+  /* flex-direction: column; */
+}
+
+.flexbox-item{
+  color: #c70039;
+  width: 600px;
+  margin:20px;
+  border: 3px;
+  /* background-color: #c70039; */
+}
+
+.textbox{
+  min-height: 300px;
+  width: 300px;
+  padding:50px;
+  /* flex-grow: 1; */
+}
+.textbox span{
+  font-size: 15px;
+  color: black;
+}
+
+.picture-box{
+    min-height: 450px;
+    width: 300px;
+    flex-shrink: 0;
+    background-image: url(images/profile.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.footer-content{
+  display: flex;
+  padding: 30px;
+  color: #c70039;
+  justify-content: flex-end;
+  font-size: 1.50rem;
+}
+
+.footer-content li{
+  margin: 0 10px;
+  display: inline;
+}
+.footer-content a{
+  color: #c70039;
+  transition: 1s;
+
+}
+.footer-content a:hover{
+  color: black;
+}
+
+
+
+/*
+.img-test{
+  width: 1112px;
+  height:584px;
+  background-image: url(images/luffy.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  transition: all 2s ease-in-out;
+  /* support for other browsers */
+  /* -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+}
+
+.img-test:hover{
+  background-image: url(images/sanji.png);
+}  */

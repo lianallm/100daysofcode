@@ -19,8 +19,7 @@ body{
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 30px;
-  font-size: 14px;
+  padding: 30px
 }
 
 .left-side{
@@ -46,7 +45,6 @@ body{
   transition: color 0.5s;
 }
 
-
 .nav-link-wrapper a:hover{ /*pseudo states, allows hover to animate*/
   color: #c0e218;
 }
@@ -56,59 +54,29 @@ body{
   font-size: 1.25em;
 }
 
-.flexbox-container{
+
+.projects{
+  text-align: center;
+}
+
+.footer-content{
   display: flex;
-  flex-wrap: wrap;
-  justify-content:center;
-  align-items: center;
-  align-content: center;
-  /* flex-direction: column; */
-}
-
-.flexbox-item{
+  padding: 30px;
   color: #c70039;
-  width: 600px;
-  margin:20px;
-  border: 3px;
-  /* background-color: #c70039; */
+  font-size: 1.50rem;
+  justify-content: flex-end;
 }
 
-.textbox{
-  min-height: 300px;
-  width: 300px;
-  padding:50px;
-  /* flex-grow: 1; */
+.footer-content li{
+  justify-content: flex-end;
+  margin: 0 10px;
+  display: inline;
 }
-.textbox span{
-  font-size: 15px;
+.footer-content a{
+  color: #c70039;
+  transition: 1s;
+
+}
+.footer-content a:hover{
   color: black;
 }
-
-.picture-box{
-    min-height: 450px;
-    width: 300px;
-    flex-shrink: 0;
-    background-image: url(images/profile.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-/*
-.img-test{
-  width: 1112px;
-  height:584px;
-  background-image: url(images/luffy.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  transition: all 2s ease-in-out;
-  /* support for other browsers */
-  /* -webkit-transition: all 2s ease-in-out;
-  -moz-transition: all 2s ease-in-out;
-  -o-transition: all 2s ease-in-out;
-}
-
-.img-test:hover{
-  background-image: url(images/sanji.png);
-}  */
